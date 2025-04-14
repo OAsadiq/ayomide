@@ -1,45 +1,29 @@
 import { Link } from "react-router-dom";
-import { FaTwitter } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Navbar = () => {
-    const shareOnTwitter = () => {
-        const text = encodeURIComponent("Create your stunning portfolio effortlessly with Portfolio-Generator!");
-        const url = encodeURIComponent(window.location.href);
-        window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
-    };
-
     return (
         <div>
-            <nav className="flex justify-between items-center max-w-7xl mx-auto mb-8 p-4 bg-white rounded-xl shadow-lg">
-                <Link to="/" className="text-xl font-bold text-gray-900 transition">
-                    Portfolio-Generator
+            <nav className="flex items-center justify-between px-20 py-4 bg-white">
+                <Link to="/" className="text-xl font-bold text-purple-700 transition">
+                    Elite-Ayomide
                 </Link>
 
-                <div className="flex items-center space-x-6">
-                    <Link to="/" className="text-gray-900 font-semibold text-md hover:text-gray-500">
-                        Home
-                    </Link>
-                    <Link to="#" className="text-gray-300 font-semibold text-md cursor-not-allowed">
-                        Pricing (Coming soon)
-                    </Link>
-                    <Link to="/contact" className="text-gray-900 font-semibold text-md hover:text-gray-500">
-                        Contact
-                    </Link>
-                </div>
-
                 <div className="flex space-x-2">
-                    <button
-                        onClick={shareOnTwitter}
-                        className="hidden sm:flex bg-white text-gray-900 px-2 rounded-lg transition items-center justify-center hover:text-blue-400"
+                    <a
+                        href="https://t.me/yourtelegramchannel"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="items-center justify-center hidden px-4 py-2 font-semibold text-purple-700 bg-white sm:flex hover:text-purple-600"
                     >
-                        <FaTwitter className="mr-2" /> Share
-                    </button>
+                        <FaTelegramPlane className="mr-2" /> Join Telegram
+                    </a>
 
                     <Link
-                        to="/templates"
-                        className="px-4 py-2 text-black bg-gray-200 rounded-xl font-semibold shadow-xl hover:bg-gray-300 transition"
+                        to="/"
+                        className="px-4 py-2 font-semibold text-black transition bg-gray-200 rounded-lg shadow-md hover:bg-gray-300"
                     >
-                        Get Started
+                        Get In Touch
                     </Link>
                 </div>
             </nav>
