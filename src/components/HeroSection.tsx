@@ -2,13 +2,13 @@ import { FaBitcoin, FaEthereum, FaEuroSign, FaDollarSign, FaCoins, FaMoneyBill }
 
 const HeroSection = () => {
   return (
-    <section className="relative px-6 py-20 overflow-hidden text-white bg-white md:h-[90vh]">
-      <FaBitcoin className="absolute text-4xl text-yellow-400 top-10 left-10 animate-pulse" />
-      <FaEthereum className="absolute bottom-10 left-[15%] text-blue-400 text-3xl animate-pulse" />
-      <FaEuroSign className="absolute text-3xl text-gray-300 top-32 right-20 animate-pulse" />
-      <FaMoneyBill className="absolute text-3xl text-green-500 top-48 left-[20%] animate-pulse" />
-      <FaDollarSign className="absolute text-4xl text-green-300 bottom-20 right-40 animate-pulse" />
-      <FaCoins className="absolute top-5 right-[40%] text-orange-300 text-3xl animate-pulse" />
+    <section className="relative px-6 py-20 overflow-hidden text-white bg-white lg:h-[90vh]">
+      <FaBitcoin className="hidden text-4xl text-yellow-400 lg:absolute top-10 left-10 animate-pulse" />
+      <FaEthereum className="hidden absolute bottom-10 left-[15%] text-blue-400 text-3xl animate-pulse" />
+      <FaEuroSign className="hidden text-3xl text-gray-300 lg:absolute top-32 right-20 animate-pulse" />
+      <FaMoneyBill className="hidden lg:absolute text-3xl text-green-500 top-48 left-[20%] animate-pulse" />
+      <FaDollarSign className="hidden text-4xl text-green-300 lg:absolute bottom-20 right-40 animate-pulse" />
+      <FaCoins className="hidden lg:absolute top-5 right-[40%] text-orange-300 text-3xl animate-pulse" />
 
       <div className="flex flex-col items-center justify-center max-w-6xl gap-10 mx-auto md:flex-col">
         <div className="flex-shrink-0">

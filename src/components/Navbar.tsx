@@ -4,7 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 const Navbar = () => {
     return (
         <div>
-            <nav className="flex items-center justify-between px-20 py-4 bg-white">
+            <nav className="flex items-center justify-between px-8 lg:px-20 py-4 bg-white">
                 <Link to="/" className="text-xl font-bold text-purple-700 transition">
                     Elite-Ayomide
                 </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
 
                     <Link
                         to="/"
-                        className="px-4 py-2 font-semibold text-black transition bg-gray-200 rounded-lg shadow-md hover:bg-gray-300"
+                        className="px-2 py-1 font-semibold text-black transition bg-gray-200 rounded-lg shadow-md lg:py-2 lg:px-4 hover:bg-gray-300"
                     >
                         Get In Touch
                     </Link>

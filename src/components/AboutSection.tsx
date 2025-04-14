@@ -2,7 +2,7 @@ const AboutSection = () => {
   return (
     <section className="px-6 py-20 text-gray-800 bg-gradient-to-b from-white to-gray-100 md:h-[100vh]">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="mb-6 font-extrabold text-purple-700 md:text-4xl">About Me</h2>
+        <h2 className="mb-6 text-4xl font-extrabold text-purple-700">About Me</h2>
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
             I'm <span className="font-semibold text-purple-700">Ajayi Ayomide</span>, a passionate and experienced Crypto Trader, Blockchain Mentor, and founder of a thriving Investment Company. With over <span className="font-semibold">7 years of hands-on experience</span> navigating the complexities of the crypto market, I’ve helped hundreds of individuals and businesses build wealth through smart crypto strategies.
